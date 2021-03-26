@@ -16,41 +16,19 @@
   <property name="windowTitle">
    <string>Music Player -HYTE Codes</string>
   </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
   <property name="styleSheet">
-   <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0.488, x2:0.985075, y2:0.483, stop:0 rgba(136, 0, 116, 255), stop:1 rgba(87, 22, 124, 255));
-background-color: qlineargradient(spread:pad, x1:0, y1:0.488, x2:0.836, y2:0.511409, stop:0 rgba(220, 26, 191, 255), stop:1 rgba(87, 22, 124, 255));</string>
+   <string notr="true">
+background-color: qlineargradient(spread:pad, x1:0.904523, y1:1, x2:0, y2:0, stop:0 rgba(0, 0, 89, 255), stop:1 rgba(146, 182, 255, 255));</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="btn1">
-    <property name="geometry">
-     <rect>
-      <x>340</x>
-      <y>100</y>
-      <width>93</width>
-      <height>28</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>MS Sans Serif</family>
-      <pointsize>10</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(0, 0, 127);
-color: rgb(255, 255, 255);</string>
-    </property>
-    <property name="text">
-     <string>Play</string>
-    </property>
-   </widget>
    <widget class="QPushButton" name="btn2">
     <property name="geometry">
      <rect>
-      <x>250</x>
-      <y>260</y>
+      <x>260</x>
+      <y>290</y>
       <width>93</width>
       <height>28</height>
      </rect>
@@ -104,44 +82,29 @@ font: 75 italic 11pt &quot;Times New Roman&quot;;</string>
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QPushButton" name="btn3">
-    <property name="geometry">
-     <rect>
-      <x>160</x>
-      <y>100</y>
-      <width>93</width>
-      <height>28</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Times New Roman</family>
-      <pointsize>11</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(170, 255, 255);
-background-color: rgb(0, 0, 127);</string>
-    </property>
-    <property name="text">
-     <string>OPEN</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>160</x>
-      <y>200</y>
+      <x>170</x>
+      <y>220</y>
       <width>271</width>
       <height>41</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI Semibold</family>
+      <pointsize>11</pointsize>
+      <weight>7</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgba(0, 0, 0, 0%);
 font: 63 11pt &quot;Segoe UI Semibold&quot;;
-color: rgb(170, 255, 127);</string>
+font-color: white;
+color: white;</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Panel</enum>
@@ -153,28 +116,134 @@ color: rgb(170, 255, 127);</string>
    <widget class="QSlider" name="horizontalSlider">
     <property name="geometry">
      <rect>
-      <x>69</x>
-      <y>320</y>
-      <width>501</width>
-      <height>22</height>
+      <x>50</x>
+      <y>350</y>
+      <width>521</width>
+      <height>10</height>
      </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>521</width>
+      <height>0</height>
+     </size>
     </property>
     <property name="font">
      <font>
+      <pointsize>8</pointsize>
       <weight>50</weight>
       <bold>false</bold>
      </font>
     </property>
     <property name="cursor">
-     <cursorShape>ArrowCursor</cursorShape>
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 0%);</string>
+     <string notr="true">QSlider::groove:horizontal {
+	border: 1px solid #999999;
+    height: 8px;
+    margin: 0px ;
+	padding: 0px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(139, 139, 139, 255), stop:0.653266 rgba(255, 255, 255, 255));
+	border-radius: 4px;
+}
+QSlider::handle:horizontal {
+	
+	
+	background-color: rgb(120, 2, 255);
+    border: 1px solid #5c5c5c;
+    width: 10px;
+	height: 10px;
+    margin: -2px 0;
+    border-radius:6px;
+}
+QSlider::sub-page:horizontal {
+background: qlineargradient(x1: 0, y1: 0,    x2: 0, y2: 1,
+    stop: 0 #66e, stop: 1 #bbf);
+background: qlineargradient(x1: 0, y1: 0.2, x2: 1, y2: 1,
+    stop: 0 #bbf, stop: 1 #55f);
+border: 1px solid #777;
+height: 10px;
+border-radius: 4px;
+}
+</string>
     </property>
     <property name="orientation">
      <enum>Qt::Horizontal</enum>
     </property>
+    <property name="tickPosition">
+     <enum>QSlider::NoTicks</enum>
+    </property>
    </widget>
+   <widget class="QWidget" name="horizontalWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>90</y>
+      <width>271</width>
+      <height>78</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(0,0,0,0);</string>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="btn3">
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>11</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(170, 255, 255);
+background-color: rgb(0, 0, 127);</string>
+       </property>
+       <property name="text">
+        <string>OPEN</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QWidget" name="verticalWidget" native="true">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(0,0,0,0);</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout"/>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn1">
+       <property name="font">
+        <font>
+         <family>MS Sans Serif</family>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(0, 0, 127);
+color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>Play</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <zorder>horizontalSlider</zorder>
+   <zorder>btn2</zorder>
+   <zorder>label</zorder>
+   <zorder>label_2</zorder>
+   <zorder>horizontalWidget</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="enabled">
@@ -185,7 +254,7 @@ color: rgb(170, 255, 127);</string>
      <x>0</x>
      <y>0</y>
      <width>638</width>
-     <height>26</height>
+     <height>25</height>
     </rect>
    </property>
   </widget>
