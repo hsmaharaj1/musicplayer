@@ -18,11 +18,18 @@ class main_player(QtWidgets.QMainWindow):
         self.label_2.setText("No Songs Selected")
 
         # Slider Making
-        self.horizontalSlider.setRange(0,0)
+        # self.horizontalSlider.setRange(0,0)
         self.horizontalSlider.sliderMoved.connect(self.set_position)
 
         self.player.positionChanged.connect(self.position_changed)
         self.player.durationChanged.connect(self.duration_changed)
+
+        #Volume Slider
+        self.volume_ctrl.sliderMoved.connect(self.volume)
+
+    def volume(self):
+        vol = self.volume_ctrl.value()
+        self.player.setVolume(vol)
 
     def set_position(self, position):
         self.player.setPosition(position)
@@ -38,6 +45,10 @@ class main_player(QtWidgets.QMainWindow):
             self.new = QtCore.QUrl.fromLocalFile(r"%s." % self.mplay[0])
             self.content = QtMultimedia.QMediaContent(self.new)
             self.player.setMedia(self.content)
+
+            self.btn2.setText("Pause")
+            self.chk = 0
+
             self.label.setText("Now Playing...")
             self.player.play()
         except AttributeError:
@@ -63,6 +74,8 @@ class main_player(QtWidgets.QMainWindow):
     def open(self):
         fname = QtWidgets.QFileDialog.getOpenFileName(self, "Open file")
         self.chk = 0
+        self.label.setText("")
+        self.btn2.setText("Pause")
         self.mplay = []
         for i in fname:
             if ".mp3" in i:
