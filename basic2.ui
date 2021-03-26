@@ -103,11 +103,10 @@ font: 75 italic 11pt &quot;Times New Roman&quot;;</string>
     <property name="styleSheet">
      <string notr="true">background-color: rgba(0, 0, 0, 0%);
 font: 63 11pt &quot;Segoe UI Semibold&quot;;
-font-color: white;
 color: white;</string>
     </property>
     <property name="frameShape">
-     <enum>QFrame::Panel</enum>
+     <enum>QFrame::NoFrame</enum>
     </property>
     <property name="text">
      <string/>
