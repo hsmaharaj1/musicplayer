@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>680</width>
-    <height>529</height>
+    <height>464</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -39,8 +39,8 @@
    <widget class="QPushButton" name="btn2">
     <property name="geometry">
      <rect>
-      <x>290</x>
-      <y>320</y>
+      <x>300</x>
+      <y>220</y>
       <width>71</width>
       <height>71</height>
      </rect>
@@ -77,7 +77,7 @@
     <property name="geometry">
      <rect>
       <x>190</x>
-      <y>150</y>
+      <y>90</y>
       <width>271</width>
       <height>41</height>
      </rect>
@@ -110,7 +110,7 @@ font: 75 italic 11pt &quot;Times New Roman&quot;;</string>
     <property name="geometry">
      <rect>
       <x>200</x>
-      <y>220</y>
+      <y>150</y>
       <width>271</width>
       <height>41</height>
      </rect>
@@ -135,12 +135,15 @@ color: white;</string>
     <property name="text">
      <string/>
     </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
    </widget>
    <widget class="QWidget" name="horizontalWidget" native="true">
     <property name="geometry">
      <rect>
       <x>200</x>
-      <y>90</y>
+      <y>30</y>
       <width>271</width>
       <height>78</height>
      </rect>
@@ -201,7 +204,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>80</x>
-      <y>403</y>
+      <y>333</y>
       <width>527</width>
       <height>11</height>
      </rect>
@@ -266,7 +269,7 @@ border-radius: 4px;
     <property name="geometry">
      <rect>
       <x>610</x>
-      <y>400</y>
+      <y>330</y>
       <width>55</width>
       <height>19</height>
      </rect>
@@ -283,7 +286,7 @@ color: rgb(255, 255, 0);</string>
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>400</y>
+      <y>330</y>
       <width>55</width>
       <height>20</height>
      </rect>
@@ -300,7 +303,7 @@ background-color: rgba(0,0,0,0);</string>
     <property name="geometry">
      <rect>
       <x>80</x>
-      <y>450</y>
+      <y>380</y>
       <width>130</width>
       <height>7</height>
      </rect>
@@ -341,7 +344,7 @@ border-radius: 2px;
     <property name="geometry">
      <rect>
       <x>40</x>
-      <y>440</y>
+      <y>370</y>
       <width>41</width>
       <height>28</height>
      </rect>
