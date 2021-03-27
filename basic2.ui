@@ -313,7 +313,7 @@ background-color: rgba(0,0,0,0);</string>
 border: 1px solid;
 height: 6px;
 	background-color: rgb(227, 227, 227);
-border-radius: 4x;
+border-radius: 3px;
 }
 QSlider::handle:horizontal{
 border: 1px solid;
