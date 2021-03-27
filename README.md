@@ -2,6 +2,8 @@
 __HYTE CODES__ <br>
 <p>This is just a simple clone of a music player which can upload and play a music. I have not made any complex features in this app.
 If you could find any bugs or could add any more features, you're welcome.</p>
+<br>
+<h2>There won't be any major updates further.</h2>
 
 ## Installation
 To Clone this Repository and use follow these steps:
