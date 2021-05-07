@@ -6,7 +6,7 @@ If you could find any bugs or could add any more features, you're welcome.</p>
 <h2>There won't be any major updates further.</h2>
 
 ## Installation
-To Clone this Repository and use follow these steps:
+To Clone this Repository and Use, follow these steps:
 - Download the Repository from GitHub
 - Install PyQt5 and pyqt5-tools via pip
 - Make sure your system has Python installed on it.
