@@ -11,6 +11,8 @@ To Clone this Repository and use follow these steps:
 - Install PyQt5 and pyqt5-tools via pip
 - Make sure your system has Python installed on it.
 - Enjoy the Service!!
+## Preview
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/54274314/117443266-8bf37000-af55-11eb-9820-56ac7597ef49.gif)
 
 ## Screenshots
 <img src="https://user-images.githubusercontent.com/54274314/112717307-c5c26700-8f11-11eb-9dbd-7c38598a8e52.jpg" width="500" height="400"/>
